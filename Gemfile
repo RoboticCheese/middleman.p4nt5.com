@@ -15,5 +15,6 @@ gem 'middleman-livereload', '~> 3.1.0'
 gem 'wdm', '~> 0.1.0', platforms: [:mswin, :mingw]
 
 group :development, :test do
+  gem 'middleman-favicon-maker'
   gem 'rubocop'
 end
