@@ -1,20 +1,11 @@
-# Encoding: UTF-8
+source 'https://rubygems.org'
 
-# If you have OpenSSL installed, we recommend updating
-# the following line to use "https"
-source 'http://rubygems.org'
-
-gem 'middleman', '~>3.2.2'
-gem 'middleman-blog'
-gem 'nokogiri'
-
-# Live-reloading plugin
-gem 'middleman-livereload', '~> 3.1.0'
-
-# For faster file watcher updates on Windows:
-gem 'wdm', '~> 0.1.0', platforms: [:mswin, :mingw]
-
-group :development, :test do
-  gem 'middleman-favicon-maker'
-  gem 'rubocop'
-end
+gem "middleman", "~> 3.1.0"
+gem "middleman-blog", "~> 3.2.0"
+gem "kramdown"
+gem "builder", "~> 3.0.0"
+gem "zurb-foundation" , '~> 4.2.2', require: false
+gem "forgery"
+gem "sitemap_generator"
+gem "tzinfo"
+gem "nokogiri"
