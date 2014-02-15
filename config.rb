@@ -21,7 +21,7 @@ activate :sprockets
 Time.zone = "America/Los_Angeles"
 
 activate :blog do |blog|
-  blog.prefix = "/blog"
+#  blog.prefix = "blog"
   blog.permalink = ":year/:month/:day/:title.html"
   blog.sources = ":year-:month-:day-:title.html"
   blog.taglink = "tags/:tag.html"
@@ -33,15 +33,15 @@ activate :blog do |blog|
   blog.day_link = ":year/:month/:day.html"
   blog.default_extension = ".md"
 
-  blog.tag_template = "/blog/tag.html"
-  blog.calendar_template = "/blog/calendar.html"
+  blog.tag_template = "tag.html"
+  blog.calendar_template = "calendar.html"
 
   blog.paginate = true
   blog.per_page = 5
   blog.page_link = "page/:num"
 end
 
-page "/blog/feed.xml", :layout => false
+page "feed.xml", :layout => false
 
 activate :deploy do |deploy|
   deploy.build_before = true

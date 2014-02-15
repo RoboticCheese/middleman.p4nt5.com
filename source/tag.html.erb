@@ -11,11 +11,11 @@ pageable: true
     <% if i > 0 %>
       <hr />
     <% end %>
-    <%= partial '/blog/article', :locals => {:article => article, :digest => true} %>
+    <%= partial 'article', :locals => {:article => article, :digest => true} %>
   <% end %>
 </div>
 
-<%= partial '/blog/pagination', :locals => {
+<%= partial 'pagination', :locals => {
   :paginate => paginate, 
   :next_page => next_page, 
   :prev_page => prev_page,

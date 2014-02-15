@@ -18,7 +18,7 @@ pageable: true
   <% end %>
 </ul>
 
-<%= partial '/blog/pagination', :locals => {
+<%= partial 'pagination', :locals => {
   :paginate => paginate, 
   :next_page => next_page, 
   :prev_page => prev_page,
