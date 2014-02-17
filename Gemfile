@@ -1,6 +1,9 @@
-source 'https://rubygems.org'
+# If you have OpenSSL installed, we recommend updating
+# the following line to use "https"
+source 'http://rubygems.org'
 
-gem 'middleman'
-gem 'middleman-deploy'
-gem 'middleman-favicon-maker'
-gem 'middleman-livereload'
+gem "middleman", "~> 3.2.2"
+gem "middleman-blog", "~> 3.5.1"
+
+# For feed.xml.builder
+gem "builder", "~> 3.0"
