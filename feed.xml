@@ -5,20 +5,80 @@
   <id>http://blog.url.com/</id>
   <link href="http://blog.url.com/"/>
   <link href="http://blog.url.com/feed.xml" rel="self"/>
-  <updated>2012-01-01T00:00:00Z</updated>
+  <updated>2014-02-19T22:07:00Z</updated>
   <author>
     <name>Blog Author</name>
   </author>
   <entry>
-    <title>Example Article</title>
-    <link rel="alternate" href="http://blog.url.com/2012/01/01/example-article.html"/>
-    <id>http://blog.url.com/2012/01/01/example-article.html</id>
-    <published>2012-01-01T00:00:00Z</published>
-    <updated>2014-02-17T02:33:08+00:00</updated>
+    <title>Test 9</title>
+    <link rel="alternate" href="http://blog.url.com/2014/02/19/test-9.html"/>
+    <id>http://blog.url.com/2014/02/19/test-9.html</id>
+    <published>2014-02-19T22:07:00Z</published>
+    <updated>2014-02-19T22:07:34+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
-    <content type="html">&lt;p&gt;This is an example article. You probably want to delete it and write your own articles!&lt;/p&gt;
+    <content type="html">
+</content>
+  </entry>
+  <entry>
+    <title>Test 8</title>
+    <link rel="alternate" href="http://blog.url.com/2014/02/19/test-8.html"/>
+    <id>http://blog.url.com/2014/02/19/test-8.html</id>
+    <published>2014-02-19T22:07:00Z</published>
+    <updated>2014-02-19T22:07:31+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">
+</content>
+  </entry>
+  <entry>
+    <title>Test 7</title>
+    <link rel="alternate" href="http://blog.url.com/2014/02/19/test-7.html"/>
+    <id>http://blog.url.com/2014/02/19/test-7.html</id>
+    <published>2014-02-19T22:07:00Z</published>
+    <updated>2014-02-19T22:07:27+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">
+</content>
+  </entry>
+  <entry>
+    <title>Test 6</title>
+    <link rel="alternate" href="http://blog.url.com/2014/02/19/test-6.html"/>
+    <id>http://blog.url.com/2014/02/19/test-6.html</id>
+    <published>2014-02-19T22:07:00Z</published>
+    <updated>2014-02-19T22:07:23+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">
+</content>
+  </entry>
+  <entry>
+    <title>Test 11</title>
+    <link rel="alternate" href="http://blog.url.com/2014/02/19/test-11.html"/>
+    <id>http://blog.url.com/2014/02/19/test-11.html</id>
+    <published>2014-02-19T22:07:00Z</published>
+    <updated>2014-02-19T22:07:41+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">
+</content>
+  </entry>
+  <entry>
+    <title>Test 4</title>
+    <link rel="alternate" href="http://blog.url.com/2014/02/19/test-4.html"/>
+    <id>http://blog.url.com/2014/02/19/test-4.html</id>
+    <published>2014-02-19T22:07:00Z</published>
+    <updated>2014-02-19T22:07:17+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">
 </content>
   </entry>
 </feed>
