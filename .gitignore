@@ -15,3 +15,6 @@
 
 # Ignore .DS_store file
 .DS_Store
+
+# Temporarily ignore temporary test blog entries
+source/*-test-*.html.markdown

@@ -5,6 +5,7 @@ source 'http://rubygems.org'
 gem 'middleman'
 gem 'middleman-blog'
 gem 'middleman-deploy'
+gem 'middleman-favicon-maker'
 
 gem 'bootstrap-sass'
 
