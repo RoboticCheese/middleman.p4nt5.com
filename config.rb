@@ -129,3 +129,8 @@ activate :deploy do |deploy|
   deploy.build_before = true
   deploy.method = :git
 end
+
+@nav_external_links = {
+  GitHub: 'https://github.com/RoboticCheese',
+  Twitter: 'https://twitter.com/RoboticCheese'
+}
