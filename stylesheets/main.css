@@ -8389,3 +8389,8 @@ button.close {
 /* line 413, /usr/local/Cellar/ruby/2.1.0/lib/ruby/gems/2.1.0/bundler/gems/font-awesome-sass-fc32fc3e5985/vendor/assets/stylesheets/font-awesome/_icons.scss */
 .fa-plus-square-o:before {
   content: "\f196"; }
+
+@media (min-width: 981px) {
+  /* line 4, /Users/jhartman/Dropbox/middleman.p4nt5.com/source/stylesheets/main.scss */
+  body {
+    padding-top: 60px; } }
