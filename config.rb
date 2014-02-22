@@ -131,6 +131,16 @@ activate :deploy do |deploy|
 end
 
 @nav_external_links = {
-  GitHub: 'https://github.com/RoboticCheese',
-  Twitter: 'https://twitter.com/RoboticCheese'
+  GitHub: {
+    icon: 'fa fa-github-square fa-2x',
+    url: 'https://github.com/RoboticCheese'
+  },
+  Twitter: {
+    icon: 'fa fa-twitter-square fa-2x',
+    url: 'https://twitter.com/RoboticCheese'
+  },
+  LinkedIn: {
+    icon: 'fa fa-linkedin-square fa-2x',
+    url: 'http://www.linkedin.com/in/RoboticCheese'
+  }
 }
