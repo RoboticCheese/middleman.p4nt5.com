@@ -9,6 +9,7 @@ gem 'middleman-favicon-maker'
 
 gem 'bootstrap-sass'
 gem 'font-awesome-sass', github: 'coderanger/font-awesome-sass'
+gem 'nokogiri'
 
 # For feed.xml.builder
 gem 'builder'
