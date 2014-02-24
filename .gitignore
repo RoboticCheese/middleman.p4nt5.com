@@ -18,3 +18,6 @@
 
 # Temporarily ignore temporary test blog entries
 source/*-test-*.html.markdown
+
+# Secret keys and such
+.secrets.yml

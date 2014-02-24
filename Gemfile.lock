@@ -93,6 +93,9 @@ GEM
       sprockets (~> 2.1)
       sprockets-helpers (~> 1.0.0)
       sprockets-sass (~> 1.0.0)
+    middleman-tapirgo (0.0.2)
+      json
+      middleman-core (>= 3.0.0)
     mini_magick (3.7.0)
       subexec (~> 0.2.1)
     mini_portile (0.5.2)
@@ -160,4 +163,5 @@ DEPENDENCIES
   middleman-blog
   middleman-deploy
   middleman-favicon-maker
+  middleman-tapirgo
   nokogiri

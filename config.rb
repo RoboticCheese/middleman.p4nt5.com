@@ -101,7 +101,7 @@ configure :build do
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
 
-    activate :favicon_maker, icons: {
+  activate :favicon_maker, icons: {
     'favicon_template.png' => [
       { icon: 'apple-touch-icon-152x152-precomposed.png' },
       { icon: 'apple-touch-icon-144x144-precomposed.png' },
@@ -123,6 +123,14 @@ configure :build do
       { icon: 'mstile-144x144', format: 'png' }
     ]
   }
+
+  if File.exist?(File.expand_path('../.secrets.yml', __FILE__))
+    activate :tapirgo do |tapir|
+      require 'yaml'
+      yaml = YAML.load_file(File.expand_path('../.secrets.yml', __FILE__))
+      tapir.api_key = yaml['tapirgo']['secret']
+    end
+  end
 end
 
 activate :deploy do |deploy|
