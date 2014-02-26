@@ -152,3 +152,5 @@ end
     url: 'http://www.linkedin.com/in/RoboticCheese'
   }
 }
+
+@tapirgo_token = '530963f470fda80200000004'
