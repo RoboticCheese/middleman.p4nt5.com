@@ -21,3 +21,6 @@ source/*-test-*.html.markdown
 
 # Secret keys and such
 .secrets.yml
+
+# Files downloaded during the build process
+source/javascripts/jquery-tapir.min.js

@@ -28,7 +28,7 @@
               <li><a href="<%= params[:url] %>"><i class="<%= params[:icon] %>" ></i></a></li>
             <% end %>
           </ul>
-          <form class="navbar-form navbar-right" role="search" action="http://tapirgo.com/api/1/search.json">
+          <form class="navbar-form navbar-right" role="search" action="/search.html">
             <div class="form-group">
               <input type="hidden" name="token" value="<%= @tapirgo_token %>">
               <input type="text" name="query" class="form-control" placeholder="Search">
