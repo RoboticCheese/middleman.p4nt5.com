@@ -126,37 +126,25 @@ configure :build do
 
   # Pull in the the Tapir jQuery plugin on build until there's a Middleman
   # plugin to do it
-  require 'net/http'
-  Net::HTTP.start('code.jquery.com') do |http|
-    file = open(File.expand_path('../source/javascripts/jquery.min.js',
-                                 __FILE__), 'wb')
-    uri = URI.encode('/jquery-2.1.0.min.js')
-    begin
-      http.request_get(uri) do |response|
-        response.read_body do |segment|
-          file.write(segment)
-        end
-      end
-    ensure
-      file.close
-    end
-  end
+  require 'open-uri'
 
-  Net::HTTP.start('https://raw.github.com') do |http|
-    file = open(File.expand_path('../source/javascripts/jquery-tapir.min.js',
-                                 __FILE__), 'wb')
-    uri = URI.encode('/TapirGo/jquery-plugin/master/jquery-tapir.min.js')
-    begin
-      http.request_get(uri) do |response|
-        response.read_body do |segment|
-          file.write(segment)
-        end
-      end
-    ensure
-      file.close
-    end
+  file = open(File.expand_path('../source/javascripts/jquery.min.js',
+                               __FILE__), 'wb')
+  open('http://code.jquery.com/jquery-2.1.0.min.js').each_line do |line|
+    file.write(line)
   end
+  file.close
 
+  file = open(File.expand_path('../source/javascripts/jquery-tapir.min.js',
+                               __FILE__), 'wb')
+  url = 'https://raw.github.com/TapirGo/jquery-plugin/master/' \
+        'jquery-tapir.min.js'
+  open(url).each_line do |line|
+    file.write(line)
+  end
+  file.close
+
+  # Push updates to Tapir if the secrets file is present
   if File.exist?(File.expand_path('../.secrets.yml', __FILE__))
     activate :tapirgo do |tapir|
       require 'yaml'
