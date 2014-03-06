@@ -11,6 +11,7 @@ gem 'middleman-tapirgo'
 gem 'bootstrap-sass'
 gem 'font-awesome-sass', github: 'coderanger/font-awesome-sass'
 gem 'nokogiri'
+gem 'tapirgo'
 
 # For feed.xml.builder
 gem 'builder'
