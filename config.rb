@@ -127,6 +127,21 @@ configure :build do
   # Pull in the the Tapir jQuery plugin on build until there's a Middleman
   # plugin to do it
   require 'net/http'
+  Net::HTTP.start('code.jquery.com') do |http|
+    file = open(File.expand_path('../source/javascripts/jquery.min.js',
+                                 __FILE__), 'wb')
+    uri = URI.encode('/jquery-2.1.0.min.js')
+    begin
+      http.request_get(uri) do |response|
+        response.read_body do |segment|
+          file.write(segment)
+        end
+      end
+    ensure
+      file.close
+    end
+  end
+
   Net::HTTP.start('https://raw.github.com') do |http|
     file = open(File.expand_path('../source/javascripts/jquery-tapir.min.js',
                                  __FILE__), 'wb')
