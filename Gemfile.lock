@@ -85,6 +85,8 @@ GEM
       middleman-core (>= 3.0.0)
       net-sftp
       ptools
+    middleman-disqus (0.0.3)
+      middleman-core (>= 3.1.0)
     middleman-favicon-maker (3.5.3)
       favicon_maker (~> 1.1.2)
       middleman-core (>= 3.0.0)
@@ -169,6 +171,7 @@ DEPENDENCIES
   middleman
   middleman-blog
   middleman-deploy
+  middleman-disqus
   middleman-favicon-maker
   middleman-tapirgo
   nokogiri

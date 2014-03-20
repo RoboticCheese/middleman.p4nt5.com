@@ -5,6 +5,7 @@ source 'http://rubygems.org'
 gem 'middleman'
 gem 'middleman-blog'
 gem 'middleman-deploy'
+gem 'middleman-disqus'
 gem 'middleman-favicon-maker'
 gem 'middleman-tapirgo'
 

@@ -159,6 +159,10 @@ activate :deploy do |deploy|
   deploy.method = :git
 end
 
+activate :disqus do |disqus|
+  disqus.shortname = 'p4nt5'
+end
+
 @nav_external_links = {
   GitHub: {
     icon: 'fa fa-github-square fa-2x',
