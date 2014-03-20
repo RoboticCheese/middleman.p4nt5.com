@@ -1,9 +1,14 @@
 <div id="search_results">
-
+  <div id="search_loading">
+    <center><img src="/images/loading.gif"></center>
+  </div>
 </div>
 
 <script src="/javascripts/jquery.min.js"></script>
 <script src="/javascripts/jquery-tapir.min.js"></script>
 <script>
-  $('#search_results').tapir({'token': '<%= @tapirgo_token %>'});
+  $('#search_results').tapir({
+    'token': '<%= @tapirgo_token %>',
+    'complete' : function() { document.getElementById('search_loading').style.display="none"; }
+  });
 </script>
