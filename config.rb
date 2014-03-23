@@ -163,6 +163,8 @@ activate :disqus do |disqus|
   disqus.shortname = 'p4nt5'
 end
 
+@site_title = 'P4NT5 Industries'
+
 @nav_external_links = {
   GitHub: {
     icon: 'fa fa-github-square fa-2x',

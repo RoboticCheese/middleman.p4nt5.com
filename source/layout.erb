@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
-    <title>P4NT5 Industries<%= ' - ' + current_article.title unless current_article.nil? %></title>
+    <title><%= @site_title %><%= ' - ' + current_article.title unless current_article.nil? %></title>
     <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
     <%= stylesheet_link_tag 'main.css' %>
   </head>
@@ -18,7 +18,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/#">P4NT5 Industries</a>
+          <a class="navbar-brand" href="/#"><%= @site_title %></a>
         </div>
     
         <!-- Collect the nav links, forms, and other content for toggling -->
