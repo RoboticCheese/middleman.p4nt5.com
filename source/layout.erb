@@ -42,9 +42,11 @@
       <%= yield %>
     </div>
 
-    <div id="footer" role="footer">
-      <%= disqus %>
-    </div
+    <% if current_article %>
+      <div id="footer" role="footer">
+        <%= disqus %>
+      </div
+    <% end %>
     
     <aside>
       <h2>Recent Articles</h2>
